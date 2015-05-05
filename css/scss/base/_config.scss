@@ -1,0 +1,65 @@
+//**
+// Project Settings
+//**
+
+// Consistent settings
+$br: 3px; // Border-radius
+$btn-br: 3px; // Button border-radius
+$padding: 40px; // Padding and margins
+$line-height: 44px; // Consistent height for buttons, inputs etc.
+
+
+
+
+
+// Responsive breakpoints
+$small-break: 700px;
+$big-break: 1024px;
+
+
+
+// Better default colors
+// Cool
+$aqua:  #7fdbff;
+$blue:  #0074d9;
+$navy:  #001f3f;
+$teal:  #39cccc;
+$green: #2ecc40;
+$olive: #3d9970;
+$lime:  #01ff70;
+// Warm
+$yellow:  #ffdc00;
+$orange:  #ff851b;
+$red:     #ff4136;
+$fuchsia: #f012be;
+$purple:  #b10dc9;
+$maroon:  #85144b;
+// Gray Scale
+$white:  #fff;
+$silver: #e9e9e9;
+$medium-grey: #969ca8; 
+$grey:   #4c5464;
+$black:  #313741;
+
+
+
+
+
+// Project color variables
+$primary-color: #008cdc;
+$secondary-color: #74187F;
+$tertiary-color: #5623BF;
+$grey-color: #f1f4f6;
+$fifth-color: #3A1940;
+$pink-color: #BC6DE5;
+
+
+
+
+
+
+$danger-color: $red; // Bad color for errors, validation etc.
+$success-color: $green; // Good color for success etc.
+$info-color: $blue; // Good color for success etc.
+$warning-color: $orange; // Good color for success etc.
+$subtle-color: $grey; // Subtle color for subtle text
