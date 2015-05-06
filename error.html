@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>404 Error</title>
-	<meta name="description" content="That page could not be found">
+	<meta name="description" content="This page could not be found">
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="icons/apple-touch-icon-57x57.png" />
@@ -23,20 +23,6 @@
 	<link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16" />
 	<link rel="icon" type="image/png" href="icons/favicon-128.png" sizes="128x128" />
 	<!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/jquery-1.10.1.min.js"><\/script>')</script>
-	<script type="text/javascript">
-	//<![CDATA[
-		$(window).load(function() { // makes sure the whole site is loaded
-			$('#status').fadeOut(); // will first fade out the loading animation
-			$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-			$('body').delay(350).css({'overflow':'visible'});
-		})
-	//]]>
-	</script>
-	<script src="js/main.js"></script>
-	<script src="//use.typekit.net/gop6ola.js"></script>
-	<script>try{Typekit.load();}catch(e){}</script>
 
 </head>
 <body class="contact-page">
@@ -92,7 +78,28 @@
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/jquery-1.10.1.min.js"><\/script>')</script>
+	<script type="text/javascript">
+	//<![CDATA[
+		$(window).load(function() { // makes sure the whole site is loaded
+			$('#status').fadeOut(); // will first fade out the loading animation
+			$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+			$('body').delay(350).css({'overflow':'visible'});
+		})
+	//]]>
+	</script>
 	<script src="js/main.js"></script>
+	<script src="js/jquery.animsition.min.js"></script>
+	<script src="//use.typekit.net/gop6ola.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-36973499-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
 
 </body>
 </html>
