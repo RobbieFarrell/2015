@@ -71,11 +71,26 @@ body{
 		text-transform: uppercase;
 	    font-family:"brandon-grotesque","museo-sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	    font-weight:bold;
-	    font-size:3.5em;
-	    line-height:1.3;
+	    font-size:4.5em;
+	    line-height:0.65;
 		position: relative;
   		top: 50%;
+  		max-width:800px;
+  		margin-left:auto;
+  		margin-right:auto;
   		transform: translateY(-50%);
+  		span{
+  			font-weight:normal;
+  			text-transform: none;
+  			font-family:  "calluna", Georgia, Times, "Times New Roman", serif;
+  			font-size:22px;
+  			&::before{
+  				  	border-top: 1px solid red;
+					width: 100px;
+					height: 4px;
+					display: block;
+  			}
+  		}
 	}	
 	div.span12{
 		padding:30px 30px 0;
@@ -213,7 +228,29 @@ body{
 	background: #ff6600;
 }
 
+.skyscanner-portfolio .inside-banner{
+	background: #5be2ed;
+}
+ul ul{
+	margin:5px 0 15px;
+}
 
+footer{
+	padding:20px 0;
+	background: #dadada;
+	p{
+		margin:0;
+		padding:0;
+		font-size:12px;
+		color:$grey;
+		a{
+			color:$grey;
+			&:hover, &:active, &:focus{
+				color:$black;
+			}
+		}
+	}
+}
 
 // Responsive styles if needed
 @include responsive($big-break) {

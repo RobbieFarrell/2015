@@ -1,33 +1,40 @@
 
 
-.span4 {
+.portfolio-listing {
 	position: relative;
 	text-align: center;
 }
 
 /* Common style */
-.span4 figure {
+.portfolio-listing figure {
 	position: relative;
+	float: left;
 	overflow: hidden;
-	margin: 0 auto 30px;
-	//min-width: 320px;
+	margin: 10px 1%;
+	min-width: 200px;
 	max-width: 400px;
-	//max-height: 360px;
-	//width: 48%;
+	max-height: 400px;
+	width: 31.3%;
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
+	/*position: relative;
+	overflow: hidden;
+	margin: 0 auto 30px;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;*/
 }
 
-.span4 figure img {
+.portfolio-listing figure img {
 	position: relative;
 	display: block;
 	min-height: 100%;
-	//max-width: 100%;
+	max-width: 100%;
 	opacity: 0.8;
 }
 
-.span4 figure figcaption {
+.portfolio-listing figure figcaption {
 	padding: 1em;
 	color: #fff;
 	text-transform: uppercase;
@@ -35,13 +42,13 @@
 	backface-visibility: hidden;
 }
 
-.span4 figure figcaption::before,
-.span4 figure figcaption::after {
+.portfolio-listing figure figcaption::before,
+.portfolio-listing figure figcaption::after {
 	pointer-events: none;
 }
 
-.span4 figure figcaption,
-.span4 figure figcaption > a {
+.portfolio-listing figure figcaption,
+.portfolio-listing figure figcaption > a {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -51,7 +58,7 @@
 
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
-.span4 figure figcaption > a {
+.portfolio-listing figure figcaption > a {
 	z-index: 1000;
 	text-indent: 200%;
 	white-space: nowrap;
@@ -59,20 +66,20 @@
 	opacity: 0;
 }
 
-.span4 figure h3 {
+.portfolio-listing figure h3 {
 	word-spacing: -0.15em;
 }
 
-.span4 figure h3 span {
+.portfolio-listing figure h3 span {
 	font-weight: 800;
 }
 
-.span4 figure h3,
-.span4 figure p {
+.portfolio-listing figure h3,
+.portfolio-listing figure p {
 	margin: 0;
 }
 
-.span4 figure p {
+.portfolio-listing figure p {
 	letter-spacing: 1px;
 	font-size: 68.5%;
 }
@@ -1129,15 +1136,19 @@ figure.effect-chico:hover p {
 	transform: scale(1);
 }
 
-@media screen and (max-width: 50em) {
-	.content {
-		padding: 0 10px;
-		text-align: center;
+
+
+@include responsive($big-break) {
+	.portfolio-listing figure {
+		width:46%;
+		margin:20px 2%;
 	}
-	.span4 figure {
-		display: inline-block;
-		float: none;
-		margin: 10px auto;
-		width: 100%;
+}
+
+@include responsive($small-break) {
+	.portfolio-listing figure {
+		width:100%;
+		margin:20px auto;
+		float:none;
 	}
 }
